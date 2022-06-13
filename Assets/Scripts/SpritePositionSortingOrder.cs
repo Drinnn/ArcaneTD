@@ -4,6 +4,7 @@ public class SpritePositionSortingOrder : MonoBehaviour
 {
     [SerializeField] private bool runOnce;
     [SerializeField] private float precisionMultiplier = 5f;
+    [SerializeField] private float positionOffsetY;
 
     private SpriteRenderer _spriteRenderer;
 
@@ -14,7 +15,7 @@ public class SpritePositionSortingOrder : MonoBehaviour
 
     private void LateUpdate()
     {
-        _spriteRenderer.sortingOrder = (int)(-transform.position.y * precisionMultiplier);
+        _spriteRenderer.sortingOrder = (int)(-(transform.position.y + positionOffsetY) * precisionMultiplier);
 
         if (runOnce)
         {
