@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddf67068696a0724ebc790fe50149c64, type: 3}
-  m_Name: GoldHarvester
+  m_Name: HQ
   m_EditorClassIdentifier: 
-  nameString: Gold Harvester
-  prefab: {fileID: 3867916326368880927, guid: da46fcf5edf0e88499fa2621ce71480e, type: 3}
+  nameString: HQ
+  prefab: {fileID: 3867916326368880927, guid: ff3cd2f792dd8644ebc813a342151f59, type: 3}
   resourceGeneratorData:
-    timeToGenerate: 2
-    resourceType: {fileID: 11400000, guid: a7a71f76658911c4ea78dac6c0a65dd3, type: 2}
+    timeToGenerate: 1
+    resourceType: {fileID: 11400000, guid: dfa81add344efb94c874b7033279e79a, type: 2}
     resourceDetectionRadius: 7
-    maxResourceAmount: 3
-  sprite: {fileID: 21300000, guid: 8ead931dd91bff8489e75de9c414f17f, type: 3}
-  minConstructionRadius: 7
+    maxResourceAmount: 7
+  sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
+  minConstructionRadius: 0

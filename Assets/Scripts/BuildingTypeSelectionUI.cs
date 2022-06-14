@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class BuildingTypeSelectionUI : MonoBehaviour
 {
+    [SerializeField] private List<BuildingTypeSO> ignoredBuildingTypes;
     [SerializeField] private Transform buttonTemplate;
     [SerializeField] private float offsetAmount = 160f;
     [SerializeField] private Sprite cursorSprite;
@@ -23,6 +24,11 @@ public class BuildingTypeSelectionUI : MonoBehaviour
         int index = 1;
         foreach (BuildingTypeSO buildingType in buildingTypeList.list)
         {
+            if (ignoredBuildingTypes.Contains(buildingType))
+            {
+                continue;
+            }
+
             Transform btnTransform = Instantiate(buttonTemplate, transform);
             _buildingTypeTransformDictionary[buildingType] = btnTransform;
 
